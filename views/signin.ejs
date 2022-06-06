@@ -1,0 +1,12 @@
+<%- include('../views/partials/header') -%>
+<h1>Se connecter</h1>
+<form action="/sign-in" method="post">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" value= <%= username || "" %>
+    />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" />
+    <input type="submit" value="Sign in" />
+</form>
+
+<%- include('../views/partials/footer') -%>
